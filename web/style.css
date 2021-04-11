@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{
+    --primary-color:#047aed;
+    --secondary-color:#1c3fa8;
+    --dark-color:#002240;
+    --light-color:#f4f4f4;
+    
+}
+
+/*-----------------navbar----------------*/
+
+*{
+    box-sizing: border-box;
+    margin:0px; 
+    padding:0px;
+}
+
+body{
+    font-family: lato, sans-serif;s
+    color:#333;
+    line-height: 1.6;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none ;
+    color:#333;
+}
+
+h1, h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0; 
+}
+
+p{
+    margin:10px 0; 
+}
+img{
+    width: 100%; 
+}
+
+.navbar{
+
+    background-color: #047aed;
+    color: #fff;
+    height: 70px;
+}
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 10px; 
+    margin:0 5px;
+}
+
+.navbar a:hover{
+    border-bottom: #fff solid;
+}
+/* showcase */
+
+.showcase{
+    height: 400px;
+    background-color: var(--primary-color);
+    color:white;
+   position: relative;   /* if anything is needed to placecd in in showcase absolutely, then it is required */
+ 
+}
+
+.showcase .grid{
+    overflow:visible;
+    grid-template-columns: 55% 45%;
+    
+}
+.showcase h1{
+    font-size: 40px;
+}
+
+.showcase p{
+    margin: 20px 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 370px;
+    width: 400px;
+    z-index: 100;
+
+}
+
+.showcase-form .form-control{
+    padding: 30px 0;
+
+}
+
+.showcase-form input[type="text"], 
+.showcase-form input[type="email"] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px; 
+    font-size: 16px;
+}
+
+.showcase-form input:focus{
+    outline:none;
+}
+
+.showcase::before,
+.showcase::after{
+    content: '';
+    position:absolute;
+    height: 100px;
+    bottom: -70px;
+    right:0;
+    left:0;
+    background:#fff;
+    transform: skewY(-3deg);
+    --webkit-transform: skewY(-3deg); /* it will be for chrome and safari */
+    --moz-transform: skewY(-3deg);
+    --ms-transform: skewY(-3deg);
+}
+
+/* stats */
+
+.stats{
+    padding-top: 100px;
+}
+
+.stats, h3{
+    max-width: 700px;
+    margin:0 auto;
+}
+
+.stats .grid h3{
+    font-size: 35px;
+}
+
+.stats .grid p{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.cli .grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child{
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2
+}
+
+
+/* cloud */
+
+.cloud .grid{
+    grid-template-columns:4fr 3fr;
+
+}
+
+/* languages */
+.languages .flex{
+    flex-wrap: wrap;
+}
+
+.languages .card{
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover{
+ transform: translateY(-15px);   
+}
+
+
+
+/* footer */
+
+
+footer .social a{
+margin: 0 10px;  
+}
+
+
+/*tablet and under   */
+@media (max-width: 768px){
+
+}
+
+/* mobile  */ 
+@media (max-width: 500px) {
+    .navbar {
+      height: 110px;
+    }
+  
+    .navbar .flex {
+      flex-direction: column;
+    }
+  
+    .navbar ul {
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .showcase-form {
+      width: 300px;
+    }
+  }
+
+
+
+
+

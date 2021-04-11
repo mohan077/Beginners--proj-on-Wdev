@@ -1,0 +1,203 @@
+/* utilities */
+.container{
+    max-width: 1100px;
+    margin: 0 auto; /* to make the container at center */
+    overflow:auto;
+    padding: 0 40px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.grid-3{
+    
+    grid-template-columns: repeat(3,1fr);
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.9);
+    padding: 20px;
+    margin: 10px;
+    color: #333;
+    
+}
+
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color:white;
+    border: none;
+    border-radius: 5px ;
+
+}
+
+.btn-outline{
+    background-color: transparent;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn:hover{
+     transform: scale(.98);
+}
+
+/* Text sizes */
+
+.lead{
+    font-size: 20px;
+
+}
+
+.sm{
+    font-size: 1rem;
+}
+
+.md{
+    font-size: 2rem;
+}
+
+.lg{
+    font-size: 3rem;
+}
+
+
+/* background and coloured buttons   */
+.bg-primary,
+ .btn-primary{
+    background-color: var(--primary-color);
+    color:ivory;
+}
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark{
+    color: white;
+}
+
+
+.bg-secondary,
+.btn-secondary{
+    background-color: var(--secondary-color);
+    color:ivory;
+}
+
+.bg-dark,
+.btn-dark{
+    background-color: var(--dark-color);
+    color:ivory;
+}
+
+.bg-light,
+.btn-light{
+    background-color: var(--light-color);
+    color:ivory;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*  margin*/
+
+.my-1{
+    margin:1rem 0;
+}
+
+.my-2{
+    margin:1rem 0;
+}
+
+.my-3{
+    margin:1rem 0;
+}
+
+.my-4{
+    margin: 3rem 0;
+}
+.my-5{
+    margin:1rem 0;
+}
+
+
+
+
+
+
+.m-1{
+    margin:1rem ;
+}
+
+.m-2{
+    margin:1rem ;
+}
+
+.m-3{
+    margin:1rem ;
+}
+
+.m-4{
+    margin: 6rem ;
+}
+.m-5{
+    margin:1rem ;
+}
+
+
+
+
+/*  padding*/
+
+.py-1{
+    padding:1rem 0;
+}
+
+.py-2{
+    padding:1rem 0;
+}
+
+.py-3{
+    padding:1rem 0;
+}
+
+.py-4{
+    padding: 3rem 0;
+}
+.py-5{
+    padding:1rem 0;
+}
+
+
+
+
+
+
+.p-1{
+    padding:1rem ;
+}
+
+.p-2{
+    padding:1rem ;
+}
+
+.p-3{
+    padding:1rem ;
+}
+
+.p-4{
+    padding: 6rem ;
+}
+.p-5{
+    padding:1rem ;
+}
+
+
